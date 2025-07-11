@@ -1,3 +1,59 @@
+@font-face {
+    font-family: RedHatDisplayBlack;
+    src: url(./fonts/Red_Hat_Display/static/RedHatDisplay-Black.ttf);
+}
+
+@font-face {
+    font-family: RedHatDisplayMedium;
+    src: url(./fonts/Red_Hat_Display/static/RedHatDisplay-Medium.ttf);
+}
+
+.text-preset-1 {
+    font-family: RedHatDisplayBlack;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.text-preset-2 {
+    font-family: RedHatDisplayBlack;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+}
+
+.text-preset-3 {
+    font-family: RedHatDisplayBlack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.text-preset-4 {
+    font-family: RedHatDisplayMedium;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+.text-preset-5 {
+    font-family: RedHatDisplayBlack;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 150%;
+}
+
+
+
+
+
 body {
     display: flex;
     min-width: 375px;
@@ -19,12 +75,14 @@ nav>img {
 }
 
 .hero {
+
     display: flex;
     padding: 64px 32px 32px 32px;
     flex-direction: column;
     align-items: center;
     gap: 8px;
     align-items: stretch;
+
 }
 
 .combined {
@@ -38,15 +96,49 @@ nav>img {
 }
 
 .combined-image {
+
     display: flex;
     height: 160px;
     justify-content: center;
     align-items: center;
     align-self: stretch;
     gap: 16.9px;
+
 }
 
 .combined-image img {
     width: 208px;
     flex-shrink: 0;
+
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.text-content>.text-preset-1 {
+    align-self: stretch;
+    color: #28283D;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 40px;
+}
+
+.text-content>.text-preset-4 {
+    align-self: stretch;
+    color: #87879D;
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 16px;
+}
+
+.button-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
