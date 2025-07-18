@@ -195,7 +195,7 @@ nav>img {
 
 .content {
     display: flex;
-    /* max-width: 1120px; */
+
     flex-direction: column;
     align-items: center;
     gap: 64px;
@@ -370,4 +370,50 @@ nav>img {
     gap: 4px;
     font-size: 16px;
     font-feature-settings: 'liga' off, 'clig' off;
+}
+
+@media (min-width: 768px) and (max-width:1439px) {
+
+    .combined {
+        gap: 72px;
+    }
+
+    .combined-image {
+        height: 303px;
+        gap: 32px;
+    }
+
+    .combined-image img {
+        width: 394px;
+
+    }
+
+    .text-content>.text-preset-1 {
+        font-size: 48px;
+    }
+
+    .button-frame {
+        flex-direction: row;
+        align-items: center;
+        gap: 17px;
+    }
+
+    .main-content {
+        padding: 56px 32px 64px 32px;
+
+    }
+
+    .grid-image-collage {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+
+    }
+
+    .grid-image-collage img {
+        width: 152px;
+        height: 160px;
+    }
+
+
 }
