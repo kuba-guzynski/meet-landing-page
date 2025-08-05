@@ -6,9 +6,9 @@ const element = document.createElement('div')
 element.className = 'combined'
 
 function checkResize() {
-    if (window.innerWidth <= 1440) {
+  if (window.innerWidth <= 1440) {
 
-        element.innerHTML = `<div class="combined-image">
+    element.innerHTML = `<div class="combined-image">
         <img src = "./assets/desktop/image-hero-left.png" alt = "hero-left" >
         <img src="./assets/desktop/image-hero-right.png" alt="hero-right">
 
@@ -35,10 +35,10 @@ function checkResize() {
         </div>
       </div>`
 
-        hero.appendChild(element)
+    hero.appendChild(element)
 
-    } else {
-        element.innerHTML = `<div class="faces-left">
+  } else {
+    element.innerHTML = `<div class="faces-left">
         <img src="./assets/desktop/image-hero-left.png" alt="hero-left">
       </div>
       <div class="text-content">
@@ -68,9 +68,11 @@ function checkResize() {
       </div>
 `
 
-        hero.appendChild(element)
-    }
+    hero.appendChild(element)
+  }
 }
+
+checkResize();
 
 window.addEventListener('resize', checkResize);
 
